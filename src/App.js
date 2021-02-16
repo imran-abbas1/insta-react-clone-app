@@ -8,6 +8,8 @@ import { Button, Input } from '@material-ui/core'
 import ImageUpload from './ImageUpload';
 import InstagramEmbed from 'react-instagram-embed';
 
+let instaLogoUrl = 'https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png';
+
 function getModalStyle() {
   const top = 50;
   const left = 50;
@@ -118,7 +120,7 @@ function App() {
           <form className="app-signUp">
             <center>
               <img className="app_headerImage"
-              src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+              src={instaLogoUrl}
               alt=""
               />
             </center>
@@ -152,7 +154,7 @@ function App() {
           <form className="app-signUp">
             <center>
               <img className="app_headerImage"
-              src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+              src={instaLogoUrl}
               alt=""
               />
             </center>
@@ -175,7 +177,7 @@ function App() {
       </Modal>
       <div className="app_header">
         <img className="app_headerImage"
-        src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+        src={instaLogoUrl}
         alt=""
         />
 

@@ -3,6 +3,9 @@ import Avatar from "@material-ui/core/Avatar"
 import './Post.css';
 import { db } from "./firebase";
 import firebase from "firebase"; 
+import likeIcon from "./Assets/like.png"
+import commentIcon from "./Assets/comment.png"
+import shareIcon from "./Assets/share.png";
 
 function Post({ postId, user, username, caption, imageUrl }) {
     const [comments, setComments] = useState([]);
@@ -41,11 +44,17 @@ function Post({ postId, user, username, caption, imageUrl }) {
         <div className="Post">
             <div className="Post_header">
                 <Avatar className="post-avatar"
-                alt="ImranAbbas"
+                alt={username}
                 src="/static/images/avatar/1.jpg" />
                 <h3>{username}</h3> 
             </div>
             <img className="post-img" src={imageUrl} />
+            <div className="post_stats">
+              <img className="post_stats_likeIcon" src={likeIcon} />
+              <img className="post_stats_commentIcon" src={commentIcon} />
+              <img className="post_stats_shareIcon" src={shareIcon} />
+            </div>
+            
             <h4 className="post-text"><strong><span className="post-userName">{username}</span></strong>{caption}</h4>
             
             <div className="post_comments">

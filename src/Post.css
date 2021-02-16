@@ -13,12 +13,37 @@
     border-bottom: 1px solid lightgray;
 }
 
+.post_stats {
+    display: flex;
+    width: 25%;
+    object-fit: contain;
+    margin: 10px;
+}
+
+.post_stats_commentIcon {
+    height: 3.5em;
+    margin-top: -12px;
+}
+
+.post_stats_likeIcon {
+    height: 2em;
+    margin-top: 0.5px;
+}
+
+.post_stats_shareIcon {
+    height: 2em;
+    margin-top: 0.5px;
+}
+
 .post-text {
     font-weight: normal;
-    padding: 20px;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-bottom: 0px;
 }
 .post-userName {
     padding-right: 5px;
+    padding-left: 5px;
 }
 
 .Post_header {
