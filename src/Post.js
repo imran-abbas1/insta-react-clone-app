@@ -65,7 +65,7 @@ function Post({ postId, user, username, caption, imageUrl, likes }) {
         username: user.displayName,
         timestamp: firebase.firestore.FieldValue.serverTimestamp()
       });
-      console.log(myLikes)
+      // console.log(myLikes)
     }
     
     const reduceLikeCount = () => {
@@ -77,7 +77,7 @@ function Post({ postId, user, username, caption, imageUrl, likes }) {
 
     const setLikeFunc = (e) => {
       e.preventDefault();
-      console.log('inside setLikeFunc', userLike)
+      // console.log('inside setLikeFunc', userLike)
         checkIfAlreadyLiked();
         if (flag === 1) {
           alert('already liked');
