@@ -35,6 +35,13 @@
     margin-top: 0.5px;
 }
 
+.post_stats_likeCount {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    font-weight: 500;
+}
+
 .post-text {
     font-weight: normal;
     padding-top: 0px;
@@ -78,4 +85,10 @@
 
 .post-avatar {
     margin-right: 10px;
+}
+@media only screen and (max-width: 900px) { 
+    .Post {
+        max-width: 317px;
+        margin-left: 30px;
+    }
 }

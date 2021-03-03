@@ -35,3 +35,9 @@
   border-bottom: 1px solid lightgray;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 900px) {
+  .app_posts {
+    display: block !important;
+  }
+ } 

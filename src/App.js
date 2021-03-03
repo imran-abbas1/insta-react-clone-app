@@ -199,6 +199,7 @@ function App() {
               user={user}
               username={post.username}
               caption={post.caption}
+              likes={post.likes}
               imageUrl={post.imageUrl} />
             ))
           }
